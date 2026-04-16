@@ -1,17 +1,12 @@
 {
-  "name": "webly",
-  "version": "2.0.0",
-  "description": "Webly Studio — High Converting Websites",
-  "main": "index.js",
+  "name": "webly-studio",
+  "version": "1.0.0",
+  "description": "Premium websites in 48 hours",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "dev": "npx serve .",
+    "start": "npx serve ."
   },
-  "dependencies": {
-    "@google/genai": "^0.1.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "nodemailer": "^6.9.13"
-  }
+  "keywords": ["website", "landing-page", "business"],
+  "author": "Webly Studio",
+  "license": "MIT"
 }
