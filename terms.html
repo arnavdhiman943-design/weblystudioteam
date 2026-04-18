@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions | Webly Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            night: '#0F172A',
+            'night-light': '#1E293B',
+            slate: '#64748B',
+            offwhite: '#F8FAFC',
+            indigo: '#4F46E5',
+            'indigo-light': '#818CF8',
+          },
+          fontFamily: {
+            heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root {
+      --color-night: #0F172A;
+      --color-indigo: #4F46E5;
+      --color-indigo-light: #818CF8;
+    }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #0F172A; }
+    .gradient-text {
+      background: linear-gradient(135deg, #4F46E5 0%, #818CF8 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(79,70,229,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79,70,229,0.03) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+    .aura {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.3;
+      z-index: 0;
+      pointer-events: none;
+      animation: floatAura 20s infinite alternate ease-in-out;
+    }
+    @keyframes floatAura {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(40px, -20px) scale(1.1); }
+      100% { transform: translate(-10px, 30px) scale(0.9); }
+    }
+    .content-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(241, 245, 249, 1);
+    }
+  </style>
+</head>
+<body class="hero-grid relative min-h-screen pt-20 pb-32">
+  
+  <div class="aura w-[600px] h-[600px] top-[-10%] left-[-10%] bg-indigo/20"></div>
+  <div class="aura w-[500px] h-[500px] bottom-[-10%] right-[-10%] bg-indigo-light/10" style="animation-delay: -5s;"></div>
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-heading font-extrabold text-2xl tracking-widest uppercase gradient-text">WEBLY</a>
+      <a href="index.html" class="inline-flex items-center gap-2 text-sm font-bold text-night hover:text-indigo transition-colors">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        Back to Home
+      </a>
+    </div>
+  </nav>
+
+  <main class="relative z-10 max-w-4xl mx-auto px-6 mt-16">
+    <header class="mb-16">
+      <h1 class="font-heading font-extrabold text-5xl md:text-6xl text-night tracking-tight mb-6">Terms & <span class="gradient-text">Conditions.</span></h1>
+      <p class="font-body text-slate text-lg">Last updated: April 18, 2026</p>
+    </header>
+
+    <div class="content-card rounded-[2.5rem] p-8 md:p-12 space-y-12">
+      
+      <section>
+        <h2 class="font-heading font-bold text-2xl text-night mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-indigo/10 text-indigo flex items-center justify-center text-sm font-black">01</span>
+          Engagement & Scope
+        </h2>
+        <div class="font-body text-slate leading-relaxed space-y-4">
+          <p>By engaging with Webly Studio, you agree to our streamlined project workflow. We specialize in rapid-delivery websites (48 hours) designed for conversion and premium aesthetics.</p>
+          <p>The 48-hour delivery countdown begins only after the client has provided all necessary assets, including logo, branding guidelines, content (copy), and images. Delays in asset provision will pause the delivery timer.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-heading font-bold text-2xl text-night mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-indigo/10 text-indigo flex items-center justify-center text-sm font-black">02</span>
+          Payment & Launch Offers
+        </h2>
+        <div class="font-body text-slate leading-relaxed space-y-4">
+          <p>Our Pricing Plans are fixed-fee as listed on our homepage. Project commencement requires a 50% upfront deposit, with the remaining balance due upon website completion prior to launch.</p>
+          <p><strong class="text-indigo">Launch Offer:</strong> Any discounts applied (e.g., ₹1,000 OFF) are limited-time offers and are only valid if the project is booked within the specified promotional window.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-heading font-bold text-2xl text-night mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-indigo/10 text-indigo flex items-center justify-center text-sm font-black">03</span>
+          Client Responsibilities
+        </h2>
+        <div class="font-body text-slate leading-relaxed space-y-4">
+          <p>The client represents that they own the rights to all materials (text, images, logos) provided to Webly Studio. Webly Studio is not liable for any copyright infringement resulting from client-provided materials.</p>
+          <p>Clients are expected to provide clear feedback during the revision round to maintain our rapid delivery schedule.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-heading font-bold text-2xl text-night mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-indigo/10 text-indigo flex items-center justify-center text-sm font-black">04</span>
+          Revisions & Support
+        </h2>
+        <div class="font-body text-slate leading-relaxed space-y-4">
+          <p>Every project includes one (1) comprehensive round of revisions post-delivery. Major changes to scope or additional revisions requested after the handoff may incur additional fees.</p>
+          <p>Standard delivery includes setup on our recommended hosting path. Post-launch maintenance is not included unless a separate support package is signed.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="font-heading font-bold text-2xl text-night mb-6 flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-indigo/10 text-indigo flex items-center justify-center text-sm font-black">05</span>
+          Intellectual Property
+        </h2>
+        <div class="font-body text-slate leading-relaxed space-y-4">
+          <p>Upon final payment, the full copyright and ownership of the final website design and code will be transferred to the client. Webly Studio retains the right to display the project as part of our professional portfolio.</p>
+        </div>
+      </section>
+
+    </div>
+
+    <footer class="mt-20 text-center">
+      <p class="font-body text-sm text-slate">Have questions about these terms?</p>
+      <a href="https://wa.me/918506071529" class="mt-4 inline-flex items-center gap-2 px-8 py-4 bg-night text-white font-heading font-bold rounded-2xl hover:bg-night-light transition-all">
+        Contact Support
+      </a>
+    </footer>
+  </main>
+
+</body>
+</html>
